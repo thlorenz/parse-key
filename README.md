@@ -1,4 +1,4 @@
-# parse-key
+# parse-key [![build status](https://secure.travis-ci.org/thlorenz/parse-key.png)](http://next.travis-ci.org/thlorenz/parse-key)
 
 Parses strings into key objects of the same format as the ones emitted by nodejs [readline](http://nodejs.org/api/readline.html).. 
 
