@@ -20,6 +20,6 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "trap": "git://github.com/thlorenz/trap.git#master"
+    "trap": "~0.3.2"
   }
 }
