@@ -1,6 +1,6 @@
 {
   "name": "parse-key",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Parses strings into key objects of the same format as the ones emitted by nodejs readline.",
   "main": "parse-key.js",
   "scripts": {
