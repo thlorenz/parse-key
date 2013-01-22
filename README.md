@@ -13,11 +13,11 @@ Counter part to [stringify-key](https://github.com/thlorenz/stringify-key).
 ```js
 var parse = require('parse-key');
 
-parse('ctrl-c') // returns { name: 'c', ctrl: true, meta: false, shift: false, alt: false }
+parse('ctrl-c')       // returns { name: 'c', ctrl: true, meta: false, shift: false, alt: false }
 
 parse('shift-ctrl-c') // returns { name: 'c', ctrl: true, meta: false, shift: true, alt: false }
 
-parse('alt-c') // returns { name: 'c', ctrl: false, meta: false, shift: false, alt: true }
+parse('alt-c')        // returns { name: 'c', ctrl: false, meta: false, shift: false, alt: true }
 ```
 
 ## Caveats
