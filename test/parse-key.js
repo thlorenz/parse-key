@@ -15,6 +15,8 @@ function assert(t, s, key) {
 test('keys without modifiers', function (t) {
   assert(t, 's', { name: 's', ctrl: false, meta: false, shift: false, alt: false })
   assert(t, 'c', { name: 'c', ctrl: false, meta: false, shift: false, alt: false })
+  assert(t, 'space', { name: 'space', ctrl: false, meta: false, shift: false, alt: false })
+  assert(t, 'escape', { name: 'escape', ctrl: false, meta: false, shift: false, alt: false })
 })
 
 test('keys with one modifier', function (t) {
@@ -22,6 +24,8 @@ test('keys with one modifier', function (t) {
   assert(t, 'meta-c'  ,  { name:'c' ,  ctrl: false ,  meta: true  ,  shift: false ,  alt: false })
   assert(t, 'shift-c' ,  { name:'c' ,  ctrl: false ,  meta: false ,  shift: true  ,  alt: false })
   assert(t, 'alt-c'   ,  { name:'c' ,  ctrl: false ,  meta: false ,  shift: false ,  alt: true })
+
+  assert(t, 'ctrl-space', { name: 'space', ctrl: true, meta: false, shift: false, alt: false })
 })
 
 test('keys with one modifier with mixed casing', function (t) {
@@ -36,4 +40,5 @@ test('keys with multiple modifiers', function (t) {
   assert(t, 'alt-meta-c'  ,  { name:'c' ,  ctrl: false ,  meta: true  ,  shift: false ,  alt: true })
   assert(t, 'shift-ctrl-meta-c' ,  { name:'c' ,  ctrl: true ,  meta: true ,  shift: true  ,  alt: false })
   assert(t, 'alt-shift-ctrl-meta-c'   ,  { name:'c' ,  ctrl: true ,  meta: true ,  shift: true ,  alt: true })
+  assert(t, 'shift-ctrl-escape', { name: 'escape', ctrl: true, meta: false, shift: true, alt: false })
 })

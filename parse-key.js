@@ -1,7 +1,7 @@
 'use strict';
 
 function assertKeyString(s) {
-  if (!/^(ctrl-|shift-|alt-|meta-){0,4}\w$/.test(s))
+  if (!/^(ctrl-|shift-|alt-|meta-){0,4}\w+$/.test(s))
     throw new Error('The string to parse needs to be of the format "c", "ctrl-c", "shift-ctrl-c".');
 }
 
