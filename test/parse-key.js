@@ -22,7 +22,7 @@ test('keys without modifiers', function (t) {
 test('keys with one modifier', function (t) {
   assert(t, 'ctrl-c'  ,  { name:'c' ,  ctrl: true  ,  meta: false ,  shift: false ,  alt: false, sequence: '\u0003' })
   assert(t, 'meta-c'  ,  { name:'c' ,  ctrl: false ,  meta: true  ,  shift: false ,  alt: false, sequence: 'c' })
-  assert(t, 'shift-c' ,  { name:'c' ,  ctrl: false ,  meta: false ,  shift: true  ,  alt: false, sequence: 'c' })
+  assert(t, 'shift-c' ,  { name:'c' ,  ctrl: false ,  meta: false ,  shift: true  ,  alt: false, sequence: 'C' })
   assert(t, 'alt-c'   ,  { name:'c' ,  ctrl: false ,  meta: false ,  shift: false ,  alt: true, sequence: 'c' })
 
   assert(t, 'ctrl-space', { name: 'space', ctrl: true, meta: false, shift: false, alt: false, sequence: '\u0000' })
@@ -31,7 +31,7 @@ test('keys with one modifier', function (t) {
 test('keys with one modifier with mixed casing', function (t) {
   assert(t ,  'Ctrl-c'  ,  { name:'c' ,  ctrl: true  ,  meta: false ,  shift: false ,  alt: false ,  sequence: '\u0003' })
   assert(t ,  'meta-C'  ,  { name:'c' ,  ctrl: false ,  meta: true  ,  shift: false ,  alt: false ,  sequence: 'c' })
-  assert(t ,  'Shift-c' ,  { name:'c' ,  ctrl: false ,  meta: false ,  shift: true  ,  alt: false ,  sequence: 'c' })
+  assert(t ,  'Shift-c' ,  { name:'c' ,  ctrl: false ,  meta: false ,  shift: true  ,  alt: false ,  sequence: 'C' })
   assert(t ,  'ALT-c'   ,  { name:'c' ,  ctrl: false ,  meta: false ,  shift: false ,  alt: true  ,  sequence: 'c' })
 })
 

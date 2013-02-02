@@ -29,5 +29,9 @@ module.exports = function parse(s) {
     ? keycodes.ctrl[key.name] || key.name
     : keycodes.nomod[key.name] || key.name;
 
+  // uppercase sequence for single chars when shift was pressed
+  if (key.shift && key.sequence && key.sequence.length === 1)
+    key.sequence = key.sequence.toUpperCase();
+
   return key;
 };
